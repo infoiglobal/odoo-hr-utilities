@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="hr_attendance_face assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/hr_attendance_face/static/src/js/face-api/face-api.min.js"></script>
+            <script type="text/javascript" src="/hr_attendance_face/static/src/js/hr_attendance_face.js"></script>
+            <link rel="stylesheet" href="/hr_attendance_face/static/src/css/kiosk.css" id="kioks-face-stylesheet"/>
+        </xpath>
+    </template>
+</odoo>

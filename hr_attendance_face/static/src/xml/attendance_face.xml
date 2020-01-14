@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template xml:space="preserve">
+    <t t-extend="HrAttendanceKioskMode">
+
+        <t t-jquery=".o_hr_attendance_kiosk_welcome_row" t-operation="after">
+            <div class="o_hr_attendance_face_video_box">
+                <video id="attendance-video-face" class="attendance-video-box" width="400px" height="200px" autoplay="true" muted="true"></video>
+            </div>
+        </t>
+    </t>
+</template>

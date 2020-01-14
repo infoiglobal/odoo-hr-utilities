@@ -1,0 +1,13 @@
+.o_hr_attendance_face_video_box {
+    width: 100%;
+    height: 250px;
+    border-color: #7c7aae8a;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    position: absolute;
+}
