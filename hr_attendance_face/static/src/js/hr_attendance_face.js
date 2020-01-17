@@ -77,6 +77,14 @@ odoo.define('hr_attendance_face.kiosk_mode', function (require) {
             var self = this;
             // Streaming the webcam
             var video = document.getElementById('attendance-video-face');
+
+            // Since Get User Media is deprecated
+            navigator.getUserMedia = (
+                    navigator.getUserMedia ||
+                    navigator.webkitGetUserMedia ||
+                    navigator.mozGetUserMedia ||
+                    navigator.msGetUserMedia);
+
             navigator.getUserMedia(
                 {video: {}},
                 stream => video.srcObject = stream,
